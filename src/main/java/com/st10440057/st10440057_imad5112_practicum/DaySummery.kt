@@ -30,6 +30,12 @@ class DaySummery : AppCompatActivity() {
         val Conditions = HomeScreen().strConditionArr
 
         dayNum = etDayNum.text.toString().toInt()//Getting the day
+
+        if(dayNum != 1 || dayNum != 2 || dayNum != 3||dayNum != 4||dayNum != 5||dayNum != 6||dayNum != 7){
+        etDayNum.error = "Number is not correct"
+        }
+
+
         getDay(dayNum)
 
         btnSerch.setOnClickListener {
@@ -63,4 +69,5 @@ class DaySummery : AppCompatActivity() {
         }//end when#1
         return day
     }
+
 }
