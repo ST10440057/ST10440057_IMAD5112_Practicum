@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ST10440057_IMAD5112_Practicum</string>
+    <string name="HomeButton">Home</string>
+    <string name="ExitButton">Exit</string>
 </resources>
