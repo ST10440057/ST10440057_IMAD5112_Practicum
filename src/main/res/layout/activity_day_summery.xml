@@ -7,8 +7,9 @@
     tools:context=".DaySummery">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="414dp"
+        android:layout_height="506dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
@@ -19,16 +20,74 @@
             android:layout_height="205dp"
             app:srcCompat="@drawable/logo" />
 
+        <EditText
+            android:id="@+id/etDayNum"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Enter The Number of The day" />
+
+        <Button
+            android:id="@+id/btnSerch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Serch" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:fontFamily="@font/alef"
+            android:text="Day:"
+            android:textSize="20sp" />
+
         <TextView
             android:id="@+id/tvMaxTemp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Max Tempreture of:" />
+            android:layout_height="51dp"
+            android:fontFamily="@font/alef"
+            android:text="Max Tempreture:"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tvMinTemp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Min Tempreture of:" />
+            android:layout_height="48dp"
+            android:fontFamily="@font/alef"
+            android:text="Min Tempreture:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvConditions"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:fontFamily="@font/alef"
+            android:text="Conditions:"
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="111dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.501" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="104dp"
+        android:layout_height="57dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.505" />
 </androidx.constraintlayout.widget.ConstraintLayout>
