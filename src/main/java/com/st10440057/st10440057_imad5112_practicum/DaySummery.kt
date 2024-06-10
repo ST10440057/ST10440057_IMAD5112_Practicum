@@ -41,9 +41,9 @@ class DaySummery : AppCompatActivity() {
         btnSerch.setOnClickListener {
 
             tvDay.text = "Day: " + day
-            tvMax.text = "Max Temperature: " + MaxTemp[dayNum]
-            tvMin.text = "Min Temperature: "+ MinTemp[dayNum]
-            tvCondition.text = "Conditions: " + Conditions[dayNum]
+            tvMax.text = "Max Temperature: " + MaxTemp[dayNum-1]
+            tvMin.text = "Min Temperature: "+ MinTemp[dayNum-1]
+            tvCondition.text = "Conditions: " + Conditions[dayNum-1]
 
         }
 
