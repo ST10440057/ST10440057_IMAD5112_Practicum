@@ -41,7 +41,7 @@
         android:layout_marginTop="26dp"
         android:layout_marginBottom="79dp"
         android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/btnExit"
+        app:layout_constraintBottom_toTopOf="@+id/btnHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,10 @@
         app:layout_constraintVertical_bias="0.637" />
 
     <Button
-        android:id="@+id/btnExit"
+        android:id="@+id/btnHome"
         android:layout_width="109dp"
         android:layout_height="61dp"
+        android:backgroundTint="@color/blue"
         android:text="@string/HomeButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +65,7 @@
         android:id="@+id/btnExit"
         android:layout_width="109dp"
         android:layout_height="61dp"
+        android:backgroundTint="@color/blue"
         android:text="@string/ExitButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
