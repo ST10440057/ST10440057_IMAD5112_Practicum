@@ -58,12 +58,13 @@
                 android:id="@+id/btnAdd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
                 android:text="Add" />
 
             <TextView
                 android:id="@+id/tvAverage"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
                 android:fontFamily="@font/alef"
                 android:text="Average Temp:" />
 
@@ -73,6 +74,7 @@
             android:id="@+id/btnExit"
             android:layout_width="105dp"
             android:layout_height="62dp"
+            android:backgroundTint="@color/blue"
             android:text="Exit"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,16 +84,29 @@
             app:layout_constraintVertical_bias="0.434" />
 
         <Button
-            android:id="@+id/btnDaily"
+            android:id="@+id/btnReport"
             android:layout_width="105dp"
             android:layout_height="62dp"
-            android:text="Daily View"
+            android:backgroundTint="@color/blue"
+            android:text="Daily Report"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.732"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.781" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="103dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/blue"
+            android:text="Clear "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.932" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,7 +14,7 @@ class SplashScreen : AppCompatActivity() {
         val ExitButton = findViewById<Button>(R.id.btnExit)
 
         HomeButton.setOnClickListener {
-            val intent = Intent(this@SplashScreen, HomePage::class.java)
+            val intent = Intent(this@SplashScreen, HomeScreen::class.java)
             startActivity(intent)
 
 
